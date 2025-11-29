@@ -1,5 +1,5 @@
 body {
-  background-image: url(/Images/Background.gif);
+  background-image: url(Images/Background.gif);
   margin:0;
 }
 
@@ -63,4 +63,5 @@ h1 {
 }
 p {
   color: red;
+
 }
