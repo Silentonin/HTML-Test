@@ -1,0 +1,43 @@
+.tab-container {
+    width: 85%;
+    margin: 30px auto;
+    border: 2px solid rgb(0, 255, 13);
+    padding: 20px;
+    background: rgb(0, 0, 0);
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+.tabs label {
+    flex: 1;
+    padding: 10px;
+    background: #e6e6e6;
+    border-right: 1px solid gray;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+input:checked + label {
+    background: #d2d2d2;
+}
+
+.content {
+    display: none;
+    border: 1px solid #aaa;
+    padding: 20px;
+    background: #ffffff;
+    line-height: 1.7;
+    font-size: 25px;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+    display: block;
+}
